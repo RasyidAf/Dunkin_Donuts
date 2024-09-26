@@ -1,9 +1,9 @@
 import Card from "./Selling_Card";
-import bestSelling1 from "../assets/best-selling-1.jpg";
-import bestSelling2 from "../assets/best-selling-2.jpg";
-import bestSelling3 from "../assets/best-selling-top-3.avif";
+import { myArr } from "../utils/data";
 
 function BestSelling() {
+  // function bebas, dikirm lewat props, di child buat button buat manggil //
+
   return (
     <article
       id="best"
@@ -12,9 +12,7 @@ function BestSelling() {
       <h2 className="text-3xl font-bold">Best Selling</h2>
       <p className="text-xl">here is best selling from dunkin donuts.</p>
       <div className="card flex justify-center items-center gap-4 my-5">
-        <Card image={bestSelling1} tipe="Strawberry" price="2.00" />
-        <Card image={bestSelling2} tipe="Strawberry" price="2.00" />
-        <Card image={bestSelling3} tipe="Strawberry" price="2.00" />
+        <Card props={myArr} />
       </div>
       <a
         href="#gallery"
